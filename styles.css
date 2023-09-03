@@ -9,8 +9,6 @@ body {
     padding: 10px 0;
   }
   
-  /* Agrega más estilos según sea necesario */
-  
   /* Estilos específicos para los resultados de búsqueda */
   #search-results {
     margin-top: 20px;
@@ -20,8 +18,7 @@ body {
   #product-details {
     margin-top: 20px;
   }
-  
-  /* Agrega más estilos según sea necesario */
+
   #resultados{
     height: auto;
   }

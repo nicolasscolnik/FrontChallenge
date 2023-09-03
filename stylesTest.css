@@ -1,96 +1,90 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Estilos para el encabezado */
-  .nav-header {
-    background-color: #FFE600;
-    padding: 10px 0;
-  }
-  
-  /* Agrega más estilos según sea necesario */
-  
-  /* Estilos específicos para los resultados de búsqueda */
-  #search-results {
-    margin-top: 20px;
-  }
-  
-  /* Estilos específicos para los detalles del producto */
-  #product-details {
-    margin-top: 20px;
-  }
-  
-  /* Agrega más estilos según sea necesario */
-  #resultados{
-    height: auto;
-  }
+  font-family: Arial, sans-serif;
+}
 
-  /* Estilos generales */
+/* Estilos para el encabezado */
+.nav-header {
+  background-color: #FFE600;
+  padding: 10px 0;
+}
+
+/* Estilos específicos para los resultados de búsqueda */
+#search-results {
+  margin-top: 20px;
+}
+
+/* Estilos específicos para los detalles del producto */
+#product-details {
+  margin-top: 20px;
+}
+
+#resultados {
+  height: auto;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
 
 /* Estilos específicos para la vista de detalle del producto */
 .product-image {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .product-attributes {
-    font-size: 14px;
-    color: #333;
+  font-size: 14px;
+  color: #333;
 }
 
 .product-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .product-price {
-    font-size: 46px;
-    font-weight: bold;
-    color: #ff5722; /* Color naranja, puedes cambiarlo según tu diseño */
-    margin-top: 10px;
+  font-size: 46px;
+  font-weight: bold;
+  color: #ff5722;
+  margin-top: 10px;
 }
 
 .btn-buy {
-    font-size: 18px;
-    width: 100%;
-    margin-top: 10px;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .product-description-heading {
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .product-description {
-    font-size: 18px;
-    margin-top: 10px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 .product-image {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-#Logo_ML{
-    width: 100%; 
-    height: auto; 
-    display: block;
-  }
+#Logo_ML {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-  #headerContainer{
-    margin: 0 !important;
-  }
-
-/* Estilos adicionales que necesites agregar según tus preferencias */
+#headerContainer {
+  margin: 0 !important;
+}

@@ -77,8 +77,6 @@ function generarBreadcrumb() {
         breadcrumb.appendChild(producto);
     }
 }
-
-
 // Llamar a la función para generar el breadcrumb en cada página
 generarBreadcrumb();
 

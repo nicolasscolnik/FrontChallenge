@@ -2,7 +2,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const miArrayParam = urlParams.get('miArray');
 
-// Convierte la cadena de texto en un objeto o array si es necesario
+// Convierte la cadena de texto en un objeto o array
 const miArrayObj = JSON.parse(decodeURIComponent(miArrayParam));
 
 // Llama a la función para renderizar los resultados
@@ -12,6 +12,17 @@ console.log(miArrayObj);
 function renderResults(results) {
     const resultsContainer = document.getElementById("resultados");
     resultsContainer.innerHTML = "";
+    if (results == null) {
+        // Recupera la cadena JSON del almacenamiento local
+        const arrayJSONRecuperado = localStorage.getItem('miArrayGuardado');
+
+        // Convierte la cadena JSON de nuevo a un array
+        results = JSON.parse(arrayJSONRecuperado);
+
+        // Ahora, "miArrayRecuperado" contiene el array original
+        console.log(results);
+    }
+
 
     results.forEach(result => {
         // Crear un div container para cada producto
@@ -72,8 +83,15 @@ function renderResults(results) {
 
         // Agregar el producto container al contenedor de resultados
         resultsContainer.appendChild(productContainer);
+
+        storeResults(results);
     });
 }
 
-// Actualiza el breadcrumb
-// document.querySelector('.breadcrumb-item:last-child').textContent = category;
+function storeResults(results) {
+    // Convierte el array a una cadena JSON
+    const arrayJSON = JSON.stringify(results);
+
+    // Almacena la cadena JSON en el almacenamiento local
+    localStorage.setItem('miArrayGuardado', arrayJSON);
+}

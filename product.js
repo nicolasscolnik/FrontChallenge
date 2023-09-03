@@ -22,7 +22,7 @@ async function loadProductDescription(id) {
       productImage.src = productData.thumbnail;
       productImage.alt = productData.title;
     } else {
-      productImage.src = "URL_DE_LA_IMAGEN_POR_DEFECTO"; // Puedes proporcionar una URL de imagen por defecto
+      productImage.src = "";
       productImage.alt = "Imagen no disponible";
     }
 
@@ -61,47 +61,4 @@ async function loadProductDescription(id) {
   }
 }
 
-
-// async function loadProductDescription(id) {
-//   try {
-//     // Hacer una solicitud a la API para obtener el producto
-//     const productResponse = await fetch(`https://api.mercadolibre.com/items/${id}`);
-//     const productData = await productResponse.json();
-
-//     // Obtener el elemento HTML donde se mostrará la imagen y la descripción
-//     const productImage = document.querySelector(".product-image");
-//     const descriptionContainer = document.querySelector(".product-description");
-//     const productTitle = document.querySelector(".product-title");
-
-//     // Mostrar la imagen del producto
-//     if (productData.thumbnail) {
-//       productImage.src = productData.thumbnail;
-//       productImage.alt = productData.title;
-//     } else {
-//       productImage.src = "URL_DE_LA_IMAGEN_POR_DEFECTO"; // Puedes proporcionar una URL de imagen por defecto
-//       productImage.alt = "Imagen no disponible";
-//     }
-
-//     if (productData.title) {
-//       productTitle.textContent = productData.title;
-//     } else {
-//       productTitle.textContent = "Nombre del producto no disponible";
-//     }
-
-//     // Hacer una solicitud adicional para obtener la descripción del producto
-//     const descriptionResponse = await fetch(`https://api.mercadolibre.com/items/${id}/description`);
-//     const descriptionData = await descriptionResponse.json();
-
-//     // Mostrar la descripción en la página
-//     if (descriptionData.plain_text) {
-//       descriptionContainer.textContent = descriptionData.plain_text;
-//     } else {
-//       descriptionContainer.textContent = "Descripción no disponible.";
-//     }
-//   } catch (error) {
-//     console.error("Error al obtener el producto y la descripción:", error);
-//   }
-// }
-
-// Llamar a la función para cargar la descripción del producto
 loadProductDescription(productId);
