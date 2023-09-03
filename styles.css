@@ -1,0 +1,37 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para el encabezado */
+  .nav-header {
+    background-color: #FFE600;
+    padding: 10px 0;
+  }
+  
+  /* Agrega más estilos según sea necesario */
+  
+  /* Estilos específicos para los resultados de búsqueda */
+  #search-results {
+    margin-top: 20px;
+  }
+  
+  /* Estilos específicos para los detalles del producto */
+  #product-details {
+    margin-top: 20px;
+  }
+  
+  /* Agrega más estilos según sea necesario */
+  #resultados{
+    height: auto;
+  }
+
+  #Logo_ML{
+    width: 100%; 
+    height: auto; 
+    display: block;
+  }
+
+  #headerContainer{
+    margin: 0 !important;
+  }
